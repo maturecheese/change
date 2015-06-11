@@ -216,7 +216,7 @@ body {
 }
 
 .slidePic {
-    color: #b6faac;
+    color: #eff7fa;
 
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -227,16 +227,17 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    width: 100%;
+    height: 100%;
 
     background-attachment: relative;
     background-position: center center;
     background-size: cover;
+    top:50px;
 }
 
 .slidePicIcons{
     top:-70px;
-    left: 150px;
+    left: 0px;
     z-index: 9;
 }
 
@@ -254,6 +255,10 @@ body {
 }
 #slidePic-3 {
    /* background-image: url('../images/jasonPics/Nakuru%20-%20LLK%20-%20RhondaSlums.jpg');*/
+
+}
+#slidePic-5{
+    background-image: url('../images/jasonPics/1413491709302.jpg');
 
 }
 
@@ -296,17 +301,28 @@ body {
 	}
 
 .slideRow-2 .col-12 .home-hover {
-		height: 166px;
+		height: 100px;
 		overflow: hidden;
 		padding-top: 26px;
 		transition: all ease-in .5s;
 	}
 
 .slideRow-2 .col-12 .home-hover:hover {
-		height: 166px;
+		height: 100px;
 		padding-top: 0;
 	}
 
+.image{
+    display: block;
+    margin: auto;
+}
+
+.centre{
+    text-align: center;
+    margin: auto;
+    padding-left:50px;
+    padding-right: 50px;
+}
 @media (max-width: 767px) {
     .slideRow-1,
     .slideRow-2 {

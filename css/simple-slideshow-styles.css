@@ -12,6 +12,7 @@
 }
 .bss-slides figure:first-child{
   position: relative;
+
 }
 .bss-slides figure img{
   opacity: 0;
@@ -27,7 +28,7 @@
   opacity: 1;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  position: relative; 
+  position: relative;
 }
 
 .bss-slides figcaption{
@@ -48,6 +49,7 @@
 .bss-slides .bss-show figcaption{
   z-index: 3;
   opacity: 1;
+    height: 8000px;
 }
 .bss-slides figcaption a{
   color: #fff;    

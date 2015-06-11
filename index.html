@@ -23,6 +23,36 @@
 	
 	
 	<link rel="prefetch" href="images/zoom.png">
+
+    <style>
+    .black_overlay{
+        display: none;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index:1001;
+        -moz-opacity: 0.8;
+        opacity:.80;
+        filter: alpha(opacity=80);
+    }
+    .white_content {
+        display: none;
+        position: fixed;
+        top: 25%;
+        left: 25%;
+        width: 50%;
+        height: 50%;
+        padding: 16px;
+        border: 16px solid orange;
+        background-color: white;
+        z-index:1002;
+        overflow: auto;
+    }
+    </style>
+
 		
 </head>
 
@@ -42,10 +72,10 @@
 				<ul class="nav row">
 					<li data-slide="1" class="col-12 col-sm-2"><a id="menu-link-1" href="#slide-1" title="Next Section"><span class="icon icon-home"></span> <span class="text">HOME</span></a></li>
 					<li data-slide="2" class="col-12 col-sm-2"><a id="menu-link-2" href="#slide-2" title="Next Section"><span class="icon icon-user"></span> <span class="text">ABOUT US</span></a></li>
-					<li data-slide="3" class="col-12 col-sm-2"><a id="menu-link-3" href="#slide-3" title="Next Section"><span class="icon icon-briefcase"></span> <span class="text">PORTFOLIO</span></a></li>
-					<li data-slide="4" class="col-12 col-sm-2"><a id="menu-link-4" href="#slide-4" title="Next Section"><span class="icon icon-gears"></span> <span class="text">PROCESS</span></a></li>
-					<li data-slide="5" class="col-12 col-sm-2"><a id="menu-link-5" href="#slide-5" title="Next Section"><span class="icon icon-heart"></span> <span class="text">CLIENTS</span></a></li>
-					<li data-slide="6" class="col-12 col-sm-2"><a id="menu-link-6" href="#slide-6" title="Next Section"><span class="icon icon-envelope"></span> <span class="text">CONTACT</span></a></li>
+					<li data-slide="3" class="col-12 col-sm-2"><a id="menu-link-3" href="#slide-3" title="Next Section"><span class="icon icon-briefcase"></span> <span class="text">ACHIEVEMENTS</span></a></li>
+					<li data-slide="4" class="col-12 col-sm-2"><a id="menu-link-4" href="#slide-4" title="Next Section"><span class="icon icon-gears"></span> <span class="text">VOLUNTEER</span></a></li>
+
+					<li data-slide="6" class="col-12 col-sm-2"><a id="menu-link-6" href="#slide-6" title="Next Section"><span class="icon icon-envelope"></span> <span class="text">CONTACT US</span></a></li>
 				</ul>
 				<div class="row">
 					<div class="col-sm-2 active-menu"></div>
@@ -74,6 +104,26 @@
                     <div class="col-12">
                         <h1 class="font-semibold">Clean, Safe Water <span class="font-thin">for</span> Everyone <span class="font-thin">in</span> Nukuru </h1>
                         <h4 class="font-thin">We find solutions to<span class="font-semibold">deliver water and sanitation to Nakuru's poorest residents</span></h4>
+                        <br>
+                        <br>
+                    </div><!-- /col-12 -->
+                </div><!-- /row -->
+                <!--<div  class="row clearfix slideRow-2">
+                    <div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="4"><img src="images/s02.png"></div><span>AFFORDABLE</span></div>
+                    <div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="3"><img src="images/s01.png"></div><span>SUSTAINABLE</span></div>
+                    <div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="5"><img src="images/s03.png"></div><span>SAFELY</span></div>
+                </div>&lt;!&ndash; /row &ndash;&gt;-->
+            </div><!-- /container -->
+
+        </figure>
+
+        <figure>
+            <!--<img src="images/jasonPics/04_Nakuru2002_01.jpg" width="100%" />-->
+            <div class="slide story container slidePic" id="slidePic-5">
+                <div  class="row clearfix slideRow-1">
+                    <div class="col-12">
+                        <h1 class="font-semibold">Improving Existing Waste Water Treatment</h1>
+                        <h4 class="font-thin">Nakuru's waste water treatment only provides 25% of total demand. 50% is achievable.</h4>
                         <br>
                         <br>
                     </div><!-- /col-12 -->
@@ -147,9 +197,9 @@
         <div class =" slidePic slidePicIcons">
 
             <div  class="row clearfix slideRow-2">
-                <div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="4"><img src="images/s02.png"></div><span>AFFORDABLE</span></div>
-                <div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="3"><img src="images/s01.png"></div><span>SUSTAINABLE</span></div>
-                <div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="5"><img src="images/s03.png"></div><span>SAFELY</span></div>
+                <div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="4"><img class="image" src="images/s03.png"></div><div class="centre">Infrastructure Improvments</div></div>
+                <div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="3"><img class="image" src="images/s01.png"></div><div class="centre">Better Local Distribution</div></div>
+                <div class="col-12 col-sm-4"><div class="home-hover navigation-slide" data-slide="5"><img class="image" src="images/s02.png"></div><div class="centre">Maximising Rainwater Collection</div></div>
             </div>
 
         </div>
@@ -159,8 +209,12 @@
 	<!-- === Slide 2 === -->
 	<div class="slide story" id="slide-2" data-slide="2">
 		<div class="container">
+            <div class="row title-row">
+                <div class="col-12 font-thin"><span class="font-semibold">Who Are We?</span> </div>
+            </div>
+
 			<div class="row title-row">
-				<div class="col-12 font-thin">Contrary to popular belief, <span class="font-semibold">Lorem Ipsum</span> is not simply random text.</div>
+				<div class="col-12 font-thin"><span class="font-semibold">SFP</span> (Sustainable and Fair Planet) is an organisation working with the local Nakuru Government and residents of the <span class="font-semibold">Nakuru Slums</span> to improve access to <span class="font-semibold">clean water</span> and <span class="font-semibold">Sanitation</span></div>
 			</div><!-- /row -->
 			<div class="row line-row">
 				<div class="hr">&nbsp;</div>
@@ -171,24 +225,25 @@
 			<div class="row content-row">
 				<div class="col-12 col-lg-3 col-sm-6">
 					<p><i class="icon icon-eye-open"></i></p>
-					<h2 class="font-thin">Visual <span class="font-semibold">Identity</span></h2>
-					<h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+					<h2 class="font-thin">Raising <span class="font-semibold">Awareness</span></h2>
+					<!--<h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>-->
 				</div><!-- /col12 -->
 				<div class="col-12 col-lg-3 col-sm-6">
-					<p><i class="icon icon-laptop"></i></p>
-					<h2 class="font-thin">Web <span class="font-semibold">Design</span></h2>
-					<h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+					<p><i class="icon icon-bolt"></i></p>
+					<h2 class="font-thin">Understanding <span class="font-semibold">Residents Needs</span></h2>
+					<!--<h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>-->
 				</div><!-- /col12 -->
+                <div class="col-12 col-lg-3 col-sm-6">
+                    <p><i class="icon icon-money"></i></p>
+                    <h2 class="font-thin"><span class="font-semibold">Fundraising</span></h2>
+                   <!-- <h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>-->
+                </div><!-- /col12 -->
 				<div class="col-12 col-lg-3 col-sm-6">
-					<p><i class="icon icon-tablet"></i></p>
-					<h2 class="font-thin">Mobile <span class="font-semibold">Apps</span></h2>
-					<h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
+					<p><i class="icon icon-gift"></i></p>
+					<h2 class="font-thin">implementing viable  <span class="font-semibold">Solutions</span></h2>
+					<!--<h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>-->
 				</div><!-- /col12 -->
-				<div class="col-12 col-lg-3 col-sm-6">
-					<p><i class="icon icon-pencil"></i></p>
-					<h2 class="font-semibold">Development</h2>
-					<h4 class="font-thin">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h4>
-				</div><!-- /col12 -->
+
 			</div><!-- /row -->
 		</div><!-- /container -->
 	</div><!-- /slide2 -->
@@ -196,81 +251,84 @@
 	<!-- === SLide 3 - Portfolio -->
 	<div class="slide story" id="slide-3" data-slide="3">
 		<div class="row">
-			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p01-large.jpg"><img class="thumb" src="images/portfolio/p01-small.jpg" alt=""></a></div>
-			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p02-large.jpg"><img class="thumb" src="images/portfolio/p02-small.jpg" alt=""></a></div>
-			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p09-large.jpg"><img class="thumb" src="images/portfolio/p09-small.jpg" alt=""></a></div>
-			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p010-large.jpg"><img class="thumb" src="images/portfolio/p10-small.jpg" alt=""></a></div>
-			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p05-large.jpg"><img class="thumb" src="images/portfolio/p05-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p01-large.jpg"><img class="thumb" src="images/120731-ProfVic-Mouch-Dump-629x420.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p02-large.jpg"><img class="thumb" src="images/131221-SREDD-Chou-XPR-Intern1-595x420.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p09-large.jpg"><img class="thumb" src="images/140606-ESFom-ComFom-Nick--630x420.jpg" alt="" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p010-large.jpg"><img class="thumb" src="images/140814-HHT-CAP-Nazon-benefs-kids-BEST-2.jpg" alt=""></a></div>
+			<!--<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p05-large.jpg"><img class="thumb" src="images/portfolio/p05-small.jpg" alt=""></a></div>
 			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p06-large.jpg"><img class="thumb" src="images/portfolio/p06-small.jpg" alt=""></a></div>
 			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p07-large.jpg"><img class="thumb" src="images/portfolio/p07-small.jpg" alt=""></a></div>
 			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p08-large.jpg"><img class="thumb" src="images/portfolio/p08-small.jpg" alt=""></a></div>
 			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p03-large.jpg"><img class="thumb" src="images/portfolio/p03-small.jpg" alt=""></a></div>
 			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p04-large.jpg"><img class="thumb" src="images/portfolio/p04-small.jpg" alt=""></a></div>
 			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p11-large.jpg"><img class="thumb" src="images/portfolio/p11-small.jpg" alt=""></a></div>
-			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p12-large.jpg"><img class="thumb" src="images/portfolio/p12-small.jpg" alt=""></a></div>
+			<div class="col-12 col-sm-6 col-lg-2"><a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p12-large.jpg"><img class="thumb" src="images/portfolio/p12-small.jpg" alt=""></a></div>-->
 		</div><!-- /row -->
+       <!-- <p>This is the main content. To display a lightbox click <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">here</a></p>
+        <div id="light" class="white_content">This is the lightbox content. <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a></div>
+        <div id="fade" class="black_overlay"></div>-->
 	</div><!-- /slide3 -->
 	
 	<!-- === Slide 4 - Process === -->
 	<div class="slide story" id="slide-4" data-slide="4">
 		<div class="container">
 			<div class="row title-row">
-				<div class="col-12 font-thin">See us <span class="font-semibold">at work</span></div>
+				<div class="col-12 font-thin"><span class="font-semibold">Volunteer! </span>See us <span class="font-semibold">at work</span></div>
 			</div><!-- /row -->
 			<div class="row line-row">
 				<div class="hr">&nbsp;</div>
 			</div><!-- /row -->
 			<div class="row subtitle-row">
 				<div class="col-sm-1 hidden-sm">&nbsp;</div>
-				<div class="col-12 col-sm-10 font-light">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</div>
+				<div class="col-12 col-sm-10 font-light">There are many ways you can help us help those in living in Nakuru Slums. Please get in contact through one of the ways below!</div>
 				<div class="col-sm-1 hidden-sm">&nbsp;</div>
 			</div><!-- /row -->
-			<div class="row content-row">
+			<!--<div class="row content-row">
 				<div class="col-sm-1 hidden-sm">&nbsp;</div>
 				<div class="col-12 col-sm-2">
 					<p><i class="icon icon-bolt"></i></p>
 					<h2 class="font-thin">Listening to<br><span class="font-semibold" >your needs</span></h2>
 					<h4 class="font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
-				</div><!-- /col12 -->
+				</div>&lt;!&ndash; /col12 &ndash;&gt;
 				<div class="col-12 col-sm-2">
 					<p><i class="icon icon-cog"></i></p>
 					<h2 class="font-thin">Project<br><span class="font-semibold">discovery</span></h2>
 					<h4 class="font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
-				</div><!-- /col12 -->
+				</div>&lt;!&ndash; /col12 &ndash;&gt;
 				<div class="col-12 col-sm-2">
 					<p><i class="icon icon-cloud"></i></p>
 					<h2 class="font-thin">Storming<br><span class="font-semibold">our brains</span></h2>
 					<h4 class="font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
-				</div><!-- /col12 -->
+				</div>&lt;!&ndash; /col12 &ndash;&gt;
 				<div class="col-12 col-sm-2">
 					<p><i class="icon icon-map-marker"></i></p>
 					<h2 class="font-thin">Getting<br><span class="font-semibold">there</span></h2>
 					<h4 class="font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
-				</div><!-- /col12 -->
+				</div>&lt;!&ndash; /col12 &ndash;&gt;
 				<div class="col-12 col-sm-2">
 					<p><i class="icon icon-gift"></i></p>
 					<h2 class="font-thin">Delivering<br><span class="font-semibold">the product</span></h2>
 					<h4 class="font-thin">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h4>
-				</div><!-- /col12 -->
+				</div>&lt;!&ndash; /col12 &ndash;&gt;
 				<div class="col-sm-1 hidden-sm">&nbsp;</div>
-			</div><!-- /row -->
+			</div>&lt;!&ndash; /row &ndash;&gt;-->
 		</div><!-- /container -->
 	</div><!-- /slide4 -->
-	
-	<!-- === Slide 5 === -->
+	<!--
+	 === Slide 5 ===
 	<div class="slide story" id="slide-5" data-slide="5">
 		<div class="container">
 			<div class="row title-row">
 				<div class="col-12 font-thin"><span class="font-semibold">Clients</span> we’ve worked with</div>
-			</div><!-- /row -->
+			</div> /row
 			<div class="row line-row">
 				<div class="hr">&nbsp;</div>
-			</div><!-- /row -->
+			</div> /row
 			<div class="row subtitle-row">
 				<div class="col-sm-1 hidden-sm">&nbsp;</div>
 				<div class="col-12 col-sm-10 font-light">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. <br/><br/> The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero.</div>
 				<div class="col-sm-1 hidden-sm">&nbsp;</div>
-			</div><!-- /row -->
+			</div> /row
 			<div class="row content-row">
 				<div class="col-1 col-sm-1 hidden-sm">&nbsp;</div>
 				<div class="col-12 col-sm-2"><img src="images/client01.png" alt=""></div>
@@ -279,22 +337,22 @@
 				<div class="col-12 col-sm-2"><img src="images/client04.png" alt=""></div>
 				<div class="col-12 col-sm-2"><img src="images/client05.png" alt=""></div>
 				<div class="col-1 col-sm-1 hidden-sm">&nbsp;</div>
-			</div><!-- /row -->
-		</div><!-- /container -->
-	</div><!-- /slide5 -->
-	
+			</div> /row
+		</div> /container
+	</div> /slide5
+	-->
 	<!-- === Slide 6 / Contact === -->
 	<div class="slide story" id="slide-6" data-slide="6">
 		<div class="container">
 			<div class="row title-row">
-				<div class="col-12 font-light">Leave us a <span class="font-semibold">message</span></div>
+				<div class="col-12 font-light">Contact Us <span class="font-semibold"></span></div>
 			</div><!-- /row -->
 			<div class="row line-row">
 				<div class="hr">&nbsp;</div>
 			</div><!-- /row -->
 			<div class="row subtitle-row">
 				<div class="col-sm-1 hidden-sm">&nbsp;</div>
-				<div class="col-12 col-sm-10 font-light">You can find us literally anywhere, just push a button and we’re there</div>
+				<div class="col-12 col-sm-10 font-light">You can get in touch with us and find more information through the following:</div>
 				<div class="col-sm-1 hidden-sm">&nbsp;</div>
 			</div><!-- /row -->
 			<div id="contact-row-4" class="row">
@@ -305,25 +363,26 @@
 				</div><!-- /col12 -->
 				<div class="col-12 col-sm-2 with-hover-text">
 					<p><a target="_blank" href="#"><i class="icon icon-envelope"></i></a></p>
-					<span class="hover-text font-light ">munter@blacktie.co</span></a>
+					<span class="hover-text font-light ">sfp@email.com</span></a>
 				</div><!-- /col12 -->
 				<div class="col-12 col-sm-2 with-hover-text">
 					<p><a target="_blank" href="#"><i class="icon icon-home"></i></a></p>
-					<span class="hover-text font-light ">London, England<br>zip code 98443</span></a>
+					<span class="hover-text font-light ">London, England<br></span></a>
 				</div><!-- /col12 -->
 				<div class="col-12 col-sm-2 with-hover-text">
 					<p><a target="_blank" href="#"><i class="icon icon-facebook"></i></a></p>
-					<span class="hover-text font-light ">facebook/blacktie_co</span></a>
+					<span class="hover-text font-light ">facebook/SFP</span></a>
 				</div><!-- /col12 -->
 				<div class="col-12 col-sm-2 with-hover-text">
 					<p><a target="_blank" href="#"><i class="icon icon-twitter"></i></a></p>
-					<span class="hover-text font-light ">@BlackTie_co</span></a>
+					<span class="hover-text font-light ">@SFP</span></a>
 				</div><!-- /col12 -->
 				<div class="col-sm-1 hidden-sm">&nbsp;</div>
 			</div><!-- /row -->
 		</div><!-- /container -->
 	</div><!-- /Slide 6 -->
-	
+
+
 </body>
 
 	<!-- SCRIPTS -->
