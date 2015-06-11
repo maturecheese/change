@@ -273,11 +273,13 @@ body {
 
 .slidePic h1 {
 	padding-top: 130px;
+
 }
 
 
 .slideRow-1{
-    padding-bottom: 200px;
+    padding-bottom: 350px;
+    max-width: 1600px !important;
 }
 @media (max-width: 1600px) {
 	.slidePic {
