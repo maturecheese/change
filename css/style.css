@@ -236,7 +236,7 @@ body {
 }
 
 .slidePicIcons{
-    top:-70px;
+    top:030px;
     left: 0px;
     z-index: 9;
 }
@@ -253,8 +253,8 @@ body {
     background-image: url('../images/jasonPics/water-source.jpg');
 
 }
-#slidePic-3 {
-   /* background-image: url('../images/jasonPics/Nakuru%20-%20LLK%20-%20RhondaSlums.jpg');*/
+#slidePic-4 {
+    background-image: url('../images/jasonPics/cape349.jpg');
 
 }
 #slidePic-5{
@@ -262,17 +262,22 @@ body {
 
 }
 
+#slidePic-6{
+    background-image: url('../images/140814-HHT-CAP-Nazon-benefs-kids-BEST-2.jpg');
+
+}
+
 .slidePic h1 {
 	padding-top: 130px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1600px) {
 	.slidePic {
 		background-position: -70% 0, 170% 0;
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1223px) {
 	.slidePic {
 		background-image: none;
 	}
