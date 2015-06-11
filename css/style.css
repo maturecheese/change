@@ -211,7 +211,7 @@ body {
 	background-position: center center;
 	background-repeat: no-repeat;
 	padding-bottom: 65px;
-	padding-top: 50px;
+	/*padding-top: 50px;*/
 	text-align: center;
 }
 
@@ -232,7 +232,7 @@ body {
     background-attachment: relative;
     background-position: center center;
     background-size: cover;
-    top:50px;
+
 }
 
 .slidePicIcons{
@@ -266,11 +266,19 @@ body {
     background-image: url('../images/140814-HHT-CAP-Nazon-benefs-kids-BEST-2.jpg');
 
 }
+#slidePic-7{
+    background-image: url('../images/120731-ProfVic-Mouch-Dump-629x420.jpg');
+
+}
 
 .slidePic h1 {
 	padding-top: 130px;
 }
 
+
+.slideRow-1{
+    padding-bottom: 200px;
+}
 @media (max-width: 1600px) {
 	.slidePic {
 		background-position: -70% 0, 170% 0;
@@ -286,6 +294,7 @@ body {
 	.slideRow-1,
     .slideRow-2 {
 		padding-top: 25px;
+
 	}
 
     .slideRow-1 h1 {
